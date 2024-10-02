@@ -1,0 +1,13 @@
+apiVersion: mygroup.mydomain.com/v1
+kind: MyKind
+metadata:
+  name: mykind-sample
+  namespace: default
+spec:
+  # TODO(user): Add fields here
+  mycontainer:
+    image: "arnabbaishnab7620/book-server:02"
+    port: 8080
+  # Specify the Docker image here
+  replicas: 1
+  # Number of desired replicas
